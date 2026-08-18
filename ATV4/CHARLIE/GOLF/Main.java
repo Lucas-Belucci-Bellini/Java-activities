@@ -1,6 +1,6 @@
 package GOLF;
 
-public class Principal {
+public class Main {
     public static void main(String[] args) {
         ItemEstoque item = new ItemEstoque("Teclado", 20, 150.00);
 

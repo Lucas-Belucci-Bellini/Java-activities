@@ -1,6 +1,6 @@
 package HOTEL;
 
-public class Principal {
+public class Main {
     public static void main(String[] args) {
         Livro livro1 = new Livro("Dom Casmurro", "Machado de Assis", 256);
         Livro livro2 = new Livro("O Cortiço", "Aluísio Azevedo", 304);
