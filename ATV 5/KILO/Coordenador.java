@@ -1,4 +1,4 @@
-package herança;
+package KILO;
 
 public class Coordenador extends Funcionario {
 
