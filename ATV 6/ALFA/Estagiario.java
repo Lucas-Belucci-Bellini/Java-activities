@@ -4,21 +4,10 @@ public class Estagiario extends Funcionario {
 
     private String instituicaoEnsino;
 
-    public Estagiario(
-            String nome,
-            int matricula,
-            double salarioBase,
-            String instituicaoEnsino) {
+    public Estagiario(String nome, int matricula, double salarioBase,
+                      String instituicaoEnsino) {
 
         super(nome, matricula, salarioBase);
-
-        if (instituicaoEnsino == null ||
-                instituicaoEnsino.trim().isEmpty()) {
-
-            throw new IllegalArgumentException(
-                    "O nome da instituição de ensino não pode ficar vazio."
-            );
-        }
 
         this.instituicaoEnsino = instituicaoEnsino;
     }
@@ -28,15 +17,6 @@ public class Estagiario extends Funcionario {
     }
 
     public void setInstituicaoEnsino(String instituicaoEnsino) {
-
-        if (instituicaoEnsino == null ||
-                instituicaoEnsino.trim().isEmpty()) {
-
-            throw new IllegalArgumentException(
-                    "O nome da instituição de ensino não pode ficar vazio."
-            );
-        }
-
         this.instituicaoEnsino = instituicaoEnsino;
     }
 
@@ -52,9 +32,6 @@ public class Estagiario extends Funcionario {
     @Override
     public void apresentarDados() {
         super.apresentarDados();
-
-        System.out.println(
-                "Instituição de ensino: " + instituicaoEnsino
-        );
+        System.out.println("Instituição de ensino: " + instituicaoEnsino);
     }
 }

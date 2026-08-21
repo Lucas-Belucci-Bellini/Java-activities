@@ -5,13 +5,7 @@ public class Gerente extends Funcionario {
     private double valorBonus;
 
     public Gerente(String nome, int matricula, double salarioBase, double valorBonus) {
-
         super(nome, matricula, salarioBase);
-
-        if (valorBonus < 0) {
-            throw new IllegalArgumentException("O valor do bônus não pode ser negativo.");
-        }
-
         this.valorBonus = valorBonus;
     }
 
@@ -20,11 +14,6 @@ public class Gerente extends Funcionario {
     }
 
     public void setValorBonus(double valorBonus) {
-
-        if (valorBonus < 0) {
-            throw new IllegalArgumentException("O valor do bônus não pode ser negativo.");
-        }
-
         this.valorBonus = valorBonus;
     }
 
