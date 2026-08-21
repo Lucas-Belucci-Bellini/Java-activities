@@ -5,14 +5,14 @@ public class Main {
     public static void main(String[] args) {
 
         Gerente gerente = new Gerente(
-                "Carlos",
+                "Renan Santos",
                 1001,
                 5000.00,
                 1500.00
         );
 
         Vendedor vendedor = new Vendedor(
-                "Lucas",
+                "Kim Kataguiri",
                 1002,
                 2500.00,
                 20000.00,
@@ -20,7 +20,7 @@ public class Main {
         );
 
         Estagiario estagiario = new Estagiario(
-                "Pedro",
+                "Gabriel Bertolucc",
                 1003,
                 1200.00,
                 "Universidade Estadual"
