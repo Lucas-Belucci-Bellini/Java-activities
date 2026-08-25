@@ -5,15 +5,15 @@ public class main {
     public static void main(String[] args) {
 
         Medico medico = new Medico(
-                "Dr. Carlos Silva",
+                "Dr. Shepherd",
                 "Cardiologia",
                 "CRM-12345"
         );
 
         Paciente paciente = new Paciente(
-                "Lucas Bellini",
+                "Simon Riley",
                 20,
-                "123.456.789-00"
+                "741.336.320-87"
         );
 
         medico.apresentarMedico();
