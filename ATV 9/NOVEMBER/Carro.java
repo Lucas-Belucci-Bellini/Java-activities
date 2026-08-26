@@ -5,14 +5,12 @@ public class Carro {
     private String marca;
     private String modelo;
 
-    // Variável que realiza o vínculo entre Carro e Motor
     private Motor motor;
 
     public Carro(String marca, String modelo, double cilindrada, String combustivel) {
         this.marca = marca;
         this.modelo = modelo;
 
-        // Composição: o Motor é criado dentro do Carro
         this.motor = new Motor(cilindrada, combustivel);
     }
 

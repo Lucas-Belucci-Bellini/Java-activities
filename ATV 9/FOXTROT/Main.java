@@ -6,7 +6,6 @@ public class Escola {
     private String localidade;
     private String tipo;
 
-    // Variável que realiza o vínculo entre Escola e Professor
     private Professor professor;
 
     public Escola(String nome, String localidade, String tipo, Professor professor) {
