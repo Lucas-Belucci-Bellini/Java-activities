@@ -1,59 +1,26 @@
 package FOXTROT;
 
-public class Escola {
+public class Main {
 
-    private String nome;
-    private String localidade;
-    private String tipo;
+    public static void main(String[] args) {
 
-    private Professor professor;
+        Professor professor = new Professor(
+                "Capitão Jacob Keyes",
+                "Matemática"
+        );
 
-    public Escola(String nome, String localidade, String tipo, Professor professor) {
-        this.nome = nome;
-        this.localidade = localidade;
-        this.tipo = tipo;
-        this.professor = professor;
-    }
+        Escola escola = new Escola(
+                "Academia Militar da UNSC",
+                "Londrina - PR",
+                "Particular",
+                professor
+        );
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getLocalidade() {
-        return localidade;
-    }
-
-    public void setLocalidade(String localidade) {
-        this.localidade = localidade;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public Professor getProfessor() {
-        return professor;
-    }
-
-    public void setProfessor(Professor professor) {
-        this.professor = professor;
-    }
-
-    public void apresentarEscola() {
-        System.out.println("=== DADOS DA ESCOLA ===");
-        System.out.println("Nome: " + nome);
-        System.out.println("Localidade: " + localidade);
-        System.out.println("Tipo: " + tipo);
+        escola.apresentarEscola();
 
         System.out.println();
+
+        System.out.println("=== PROFESSOR INDEPENDENTE ===");
         professor.apresentarProfessor();
     }
 }
