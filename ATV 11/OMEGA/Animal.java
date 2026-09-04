@@ -1,5 +1,3 @@
-package OMEGA;
-
 public class Animal {
 
     private String nome;
