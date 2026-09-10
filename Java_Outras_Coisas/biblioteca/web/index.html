@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Central</h1>
+    </header>
+
+    <main class="container">
+        <section class="dashboard">
+            <div class="card">
+                <h3>Livros</h3>
+                <p id="qtdLivros">0</p>
+            </div>
+            <div class="card">
+                <h3>Usuários</h3>
+                <p id="qtdUsuarios">0</p>
+            </div>
+            <div class="card">
+                <h3>Empréstimos ativos</h3>
+                <p id="qtdEmprestimos">0</p>
+            </div>
+        </section>
+
+        <section class="forms-grid">
+            <div class="panel">
+                <h2>Cadastrar livro</h2>
+                <form id="formLivro">
+                    <input type="number" name="id" placeholder="ID do livro" required>
+                    <input type="text" name="titulo" placeholder="Título" required>
+                    <input type="text" name="autor" placeholder="Autor" required>
+                    <input type="number" name="anoPublicacao" placeholder="Ano" required>
+                    <input type="text" name="categoria" placeholder="Categoria" required>
+                    <input type="number" name="quantidadeDisponivel" placeholder="Quantidade disponível" required>
+                    <button type="submit">Cadastrar livro</button>
+                </form>
+                <div id="respostaLivro" class="resposta"></div>
+            </div>
+
+            <div class="panel">
+                <h2>Cadastrar usuário</h2>
+                <form id="formUsuario">
+                    <input type="number" name="id" placeholder="ID do usuário" required>
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="text" name="cpf" placeholder="CPF" required>
+                    <input type="text" name="telefone" placeholder="Telefone" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <button type="submit">Cadastrar usuário</button>
+                </form>
+                <div id="respostaUsuario" class="resposta"></div>
+            </div>
+        </section>
+
+        <section class="forms-grid">
+            <div class="panel">
+                <h2>Pesquisar livro</h2>
+                <input type="text" id="pesquisaLivro" placeholder="Título, autor ou categoria">
+                <button onclick="buscarLivros()">Buscar</button>
+                <div id="listaLivros" class="lista"></div>
+            </div>
+
+            <div class="panel">
+                <h2>Pesquisar usuário</h2>
+                <input type="text" id="pesquisaUsuario" placeholder="Nome ou CPF">
+                <button onclick="buscarUsuarios()">Buscar</button>
+                <div id="listaUsuarios" class="lista"></div>
+            </div>
+        </section>
+
+        <section class="forms-grid">
+            <div class="panel">
+                <h2>Empréstimo</h2>
+                <form id="formEmprestimo">
+                    <input type="number" name="usuarioId" placeholder="ID do usuário" required>
+                    <input type="number" name="livroId" placeholder="ID do livro" required>
+                    <button type="submit">Emprestar</button>
+                </form>
+                <div id="respostaEmprestimo" class="resposta"></div>
+            </div>
+
+            <div class="panel">
+                <h2>Devolução</h2>
+                <form id="formDevolucao">
+                    <input type="number" name="emprestimoId" placeholder="ID do empréstimo" required>
+                    <button type="submit">Devolver</button>
+                </form>
+                <div id="respostaDevolucao" class="resposta"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
