@@ -1,4 +1,4 @@
-public class Main {
+public class MainPasta2 {
     public static void main(String[] args) {
         Aluno aluno = new Aluno("João", 20);
         Professor professor = new Professor("Maria", "Java");
